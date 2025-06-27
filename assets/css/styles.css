@@ -35,6 +35,13 @@
   /* Z-index */
   --z-back: -10;
   --z-fixed: 100;
+  
+  /* Light mode footer colors */
+  --footer-background: #1E293B;
+  --footer-text: #FFFFFF;
+  --footer-title: #FFFFFF;
+  --footer-social: #FFFFFF;
+  --footer-social-hover: #818CF8;
 }
 
 /* Dark theme variables */
@@ -44,10 +51,15 @@
   --text-color: #F8FAFC;
   --body-color: #1E293B;
   --title-color: #F8FAFC;
-  --text-color-light: #D1D5DB;
+  --text-color-light: #E2E8F0;
   --white-color: #1E293B;
   --container-color: #334155;
   --gradient-color: linear-gradient(135deg, #818CF8 0%, #4F46E5 100%);
+  --footer-background: #1E293B;
+  --footer-text: #E2E8F0;
+  --footer-title: #F8FAFC;
+  --footer-social: #818CF8;
+  --footer-social-hover: #4F46E5;
 }
 
 /* Dark mode transition */
@@ -400,6 +412,31 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+.contact__container {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.contact__container h4 {
+  color: var(--title-color);
+  margin-bottom: var(--mb-2);
+}
+
+.contact__container p {
+  color: var(--text-color-light);
+  margin-bottom: var(--mb-4);
+}
+
+.contact__container .home__social {
+  display: flex;
+  gap: var(--mb-2);
+  justify-content: center;
 }
 .contact__button {
   display: block;
@@ -412,11 +449,52 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: var(--footer-background);
+  color: var(--footer-text);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  box-shadow: var(--shadow-md);
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+  color: var(--footer-title);
+  font-weight: 700;
+}
+
+.footer__social {
+  margin-bottom: var(--mb-4);
+  display: flex;
+  justify-content: center;
+  gap: var(--mb-2);
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: var(--footer-social);
+  margin: 0 var(--mb-2);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__icon:hover {
+  color: var(--footer-social-hover);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  color: var(--footer-text);
+  margin-bottom: var(--mb-2);
+  opacity: 0.9;
 }
 .footer__title {
   font-size: 2rem;
