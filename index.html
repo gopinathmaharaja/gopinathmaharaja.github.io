@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <link href="assets/img/favicon.ico" rel="icon" />
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml" />
 
   <!-- Add Animate.css CDN in <head> for animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -22,7 +22,7 @@
 <body>
   <!--===== HEADER =====-->
   <header class="l-header">
-    <nav class="nav bd-grid">
+    <nav class="nav">
       <div>
         <a href="#" class="nav__logo">Gopinath Maharaja</a>
       </div>
@@ -38,257 +38,286 @@
   </header>
 
   <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home bd-grid" id="home">
-      <div class="home__data">
-        <h3 class="home__title animate__animated animate__fadeInDown" style="margin-right: 8rem">
-          Hi,<br />I'm <span class="home__title-color">Gopinath Maharaja</span><br />
-          Full Stack Developer <br /> Problem Solver
-        </h3>
-        <p class="home__description animate__animated animate__fadeInUp">
-          I'm a software engineer with expertise in building scalable applications.<br />
-          I specialize in modern web technologies and cloud solutions.<br />
-          I thrive on creating innovative solutions that make a real impact.
-        </p>
-        <div class="home__cta">
-          <a href="#contact" class="button animate__animated animate__fadeInUp">Get in Touch</a>
-          <a href="assets/img/Gopinath Maharaja.pdf" class="button button-outline animate__animated animate__fadeInUp"
-            target="_blank">View Resume</a>
+    <!--===== HERO =====-->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title animate__animated animate__fadeInDown">
+            Hi, I'm <span class="hero__accent">Gopinath Maharaja</span>
+          </h1>
+          <h2 class="hero__subtitle animate__animated animate__fadeInUp">
+            Full Stack Developer & Problem Solver
+          </h2>
+          <p class="hero__description animate__animated animate__fadeInUp">
+            Building scalable applications with modern web technologies and cloud solutions
+          </p>
+          <div class="hero__cta animate__animated animate__fadeInUp">
+            <a href="#contact" class="button">Get in Touch</a>
+            <a href="assets/img/Gopinath Maharaja.pdf" class="button button-outline" target="_blank">View Resume</a>
+          </div>
+          <div class="hero__social animate__animated animate__fadeInUp">
+            <a href="https://www.linkedin.com/in/gopinath​-maharaja-235133142" class="social-icon" target="_blank">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/gopinathmaharaja" class="social-icon" target="_blank">
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="home__social">
-        <a href="https://www.linkedin.com/in/gopinath​-maharaja-235133142" class="home__social-icon" target="_blank"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/gopinathmaharaja" class="home__social-icon" target="_blank"><i
-            class="bx bxl-github"></i></a>
-      </div>
-
-      <div class="home__img">
-        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <mask id="mask0" mask-type="alpha">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-          </mask>
-          <g mask="url(#mask0)">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-            <image class="home__blob-img" x="50" y="60" href="assets/img/user.png" />
-          </g>
-        </svg>
+        <div class="hero__image animate__animated animate__slideInRight">
+          <svg class="hero__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+              <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+            </mask>
+            <g mask="url(#mask0)">
+              <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+              <image class="hero__blob-img" x="50" y="60" href="assets/img/user.png" />
+            </g>
+          </svg>
+        </div>
       </div>
     </section>
 
     <!--===== ABOUT =====-->
-    <section class="about section" id="about">
-      <h2 class="section-title">About Me</h2>
-
-      <div class="about__container bd-grid">
-        <div class="about__img">
-          <img src="assets/img/about.jpg" alt="Gopinath Maharaja" />
-        </div>
-
-        <div>
-          <h2 class="about__subtitle">Full Stack Developer & Architect</h2>
-          <p class="about__text">
-            As a seasoned software engineer with a strong foundation in Computer Science from Sona College of
-            Technology, I specialize in crafting robust, scalable applications that solve real-world problems. My
-            expertise spans full-stack development, cloud architecture, and modern web technologies.
-          </p>
-          <p class="about__text">
-            I thrive in collaborative environments and am passionate about mentorship. My approach combines technical
-            excellence with a focus on user experience and business value. When I'm not coding, you'll find me exploring
-            new technologies, contributing to open source, and helping others grow in their tech careers.
-          </p>
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="Gopinath Maharaja" />
+          </div>
+          <div class="about__content">
+            <h3 class="about__subtitle">Full Stack Developer & Architect</h3>
+            <p class="about__text">
+              I’m a senior full-stack developer and architect with a strong foundation in Computer Science from Sona College of Technology. I focus on designing and building robust, scalable systems that solve real business problems, with experience spanning backend services, system architecture, and modern web technologies. I enjoy working close to both the problem space and the code, making thoughtful technical decisions that balance performance, maintainability, and long-term growth.
+            </p>
+            <p class="about__text">
+              I work best in collaborative teams and take pride in mentoring engineers and setting technical direction. My approach is grounded in clear architecture, pragmatic problem-solving, and delivering software that is reliable, observable, and easy to evolve. Outside of day-to-day development, I actively explore emerging technologies and enjoy helping teams and individuals grow through guidance, reviews, and knowledge sharing.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-bootstrap"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">Web Development</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">95%</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="skills__container bd-grid">
-        <div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-bootstrap skills__icon"></i>
-              <span class="skills__name">WEB DEVELOPMENT</span>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-nodejs"></i>
             </div>
-            <div class="skills__bar skills__html"></div>
-            <div>
-              <span class="skills__percentage">95%</span>
-            </div>
-          </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-nodejs skills__icon"></i>
-              <span class="skills__name">NODE JS</span>
-            </div>
-            <div class="skills__bar skills__css"></div>
-            <div>
-              <span class="skills__percentage">85%</span>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">Node.js</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">85%</span>
+              </div>
             </div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-javascript skills__icon"></i>
-              <span class="skills__name">JAVASCRIPT</span>
-            </div>
-            <div class="skills__bar skills__html"></div>
-            <div>
-              <span class="skills__percentage">95%</span>
-            </div>
-          </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-postgresql skills__icon"></i>
-              <span class="skills__name">SQL</span>
-            </div>
-            <div class="skills__bar skills__ux"></div>
-            <div>
-              <span class="skills__percentage">85%</span>
-            </div>
-          </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-mongodb skills__icon"></i>
-              <span class="skills__name">Mongo DB</span>
-            </div>
-            <div class="skills__bar skills__ux"></div>
-            <div>
-              <span class="skills__percentage">85%</span>
-            </div>
-          </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-aws skills__icon"></i>
-              <span class="skills__name">AWS (ECS,ECR,S3,RDS,ELB)</span>
-            </div>
-            <div class="skills__bar skills__aws"></div>
-            <div>
-              <span class="skills__percentage">65%</span>
-            </div>
-          </div>
-        </div>
 
-        <div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-react skills__icon"></i>
-              <span class="skills__name">REACT</span>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-javascript"></i>
             </div>
-            <div class="skills__bar skills__react"></div>
-            <div>
-              <span class="skills__percentage">75%</span>
-            </div>
-          </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-react skills__icon"></i>
-              <span class="skills__name">React Native</span>
-            </div>
-            <div class="skills__bar skills__reactnative"></div>
-            <div>
-              <span class="skills__percentage">60%</span>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">JavaScript</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">95%</span>
+              </div>
             </div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-go-lang skills__icon"></i>
-              <span class="skills__name">GO Lang</span>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-postgresql"></i>
             </div>
-            <div class="skills__bar skills__reactnative"></div>
-            <div>
-              <span class="skills__percentage">60%</span>
-            </div>
-          </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-typescript skills__icon"></i>
-              <span class="skills__name">TYPESCRIPT</span>
-            </div>
-            <div class="skills__bar skills__js"></div>
-            <div>
-              <span class="skills__percentage">90%</span>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">SQL</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">85%</span>
+              </div>
             </div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxs-file-json skills__icon"></i>
-              <span class="skills__name">REST API</span>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-mongodb"></i>
             </div>
-            <div class="skills__bar skills__ux"></div>
-            <div>
-              <span class="skills__percentage">85%</span>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">MongoDB</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">85%</span>
+              </div>
             </div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="bx bxl-git skills__icon"></i>
-              <span class="skills__name">GIT</span>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-aws"></i>
             </div>
-            <div class="skills__bar skills__ux"></div>
-            <div>
-              <span class="skills__percentage">85%</span>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">AWS</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">65%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-react"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">React</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-react"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">React Native</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">60%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-go-lang"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">Go</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">60%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-typescript"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">TypeScript</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxs-file-json"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">REST API</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="bx bxl-git"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">Git</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar"></div>
+                <span class="skill-card__percent">85%</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--===== WORK =====-->
-    <section class="work section" id="experience">
-      <h2 class="section-title">Experience</h2>
+    <!--===== EXPERIENCE =====-->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <div class="experience__grid">
+          <div class="experience-card">
+            <h4 class="experience-card__title">D4 Insight - Senior Software Engineer</h4>
+            <p class="experience-card__date">Jan 2025 - Current</p>
+            <ul class="experience-card__list">
+              <li>Worked on banking software solutions using Node.js</li>
+              <li>Currently working on high-performance, scalable, and secure payment solutions</li>
+            </ul>
+          </div>
 
-      <div class="work__container bd-grid">
-        <div>
-          <h4 class="about__subtitle">
-            D4 Insight - Senior Software Engineer
-          </h4>
-          <p>Jan 2025 - Current</p>
-          <ul>
-            <li>Worked on banking software solutions using Node.js.</li>
-            <li>Currently working on high-performance, scalable, and secure payment solutions.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="about__subtitle">Credopay - Senior Associate</h4>
-          <p>Nov 2022 - Jan 2025</p>
-          <ul>
-            <li>Mentored junior engineers and designed scalable payment solutions for POS, AEPS, and UPI transactions.</li>
-            <li>Designed and implemented settlement and merchant management systems.</li>
-            <li>Integrated third-party APIs and improved system reliability.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="about__subtitle">
-            Kenla Systems PVT Ltd - Lead Developer
-          </h4>
-          <p>Sep 2018 - Oct 2022</p>
-          <ul>
-            <li>Developed multiple SaaS products as a Software Developer.</li>
-            <li>Integrated third-party APIs and improved system reliability.</li>
-          </ul>
+          <div class="experience-card">
+            <h4 class="experience-card__title">Credopay - Senior Associate</h4>
+            <p class="experience-card__date">Nov 2022 - Jan 2025</p>
+            <ul class="experience-card__list">
+              <li>Mentored junior engineers and designed scalable payment solutions</li>
+              <li>Designed and implemented settlement and merchant management systems</li>
+              <li>Integrated third-party APIs and improved system reliability</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <h4 class="experience-card__title">Kenla Systems PVT Ltd - Lead Developer</h4>
+            <p class="experience-card__date">Sep 2018 - Oct 2022</p>
+            <ul class="experience-card__list">
+              <li>Developed multiple SaaS products as a Software Developer</li>
+              <li>Integrated third-party APIs and improved system reliability</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <!--===== CONTACT =====-->
-    <section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
-
-      <div class="contact__container bd-grid">
-        <div>
-          <h4>EMail</h4>
-          <p>gopinathmaharaja@gmail.com</p>
-
-          <h4>Social</h4>
-          <div class="home__social">
-            <a href="https://www.linkedin.com/in/gopinath​-maharaja-235133142" class="home__social-icon"><i
-                class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/gopinathmaharaja" class="home__social-icon"><i class="bx bxl-github"></i></a>
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get in Touch</h2>
+        <div class="contact__content">
+          <div class="contact__info">
+            <h4 class="contact__label">Email</h4>
+            <p class="contact__text">gopinathmaharaja@gmail.com</p>
+          </div>
+          <div class="contact__info">
+            <h4 class="contact__label">Social</h4>
+            <div class="contact__social">
+              <a href="https://www.linkedin.com/in/gopinath​-maharaja-235133142" class="social-icon" target="_blank">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="https://github.com/gopinathmaharaja" class="social-icon" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -297,14 +326,11 @@
 
   <!--===== FOOTER =====-->
   <footer class="footer">
-    <p class="footer__title">Gopinath</p>
-    <div class="footer__social">
-      <a href="https://www.linkedin.com/in/gopinath​-maharaja-235133142" class="footer__icon"><i
-          class="bx bxl-linkedin"></i></a>
-      <a href="https://github.com/gopinathmaharaja" class="footer__icon"><i class="bx bxl-github"></i></a>
+    <div class="footer__content">
+      <p class="footer__title">Gopinath Maharaja</p>
+      <p class="footer__copy">Thank you for visiting</p>
+      <p class="footer__copy">&#169; 2025 Gopinath. All rights reserved</p>
     </div>
-    <p class="footer__copy">Thank you for visiting!!!</p>
-    <p class="footer__copy">&#169; Gopinath. All rights reserved</p>
   </footer>
 
   <!--===== SCROLL REVEAL =====-->
@@ -312,14 +338,32 @@
 
   <!--===== MAIN JS =====-->
   <script src="assets/js/main.js"></script>
-  <!-- Add theme switcher script before </body> -->
+  <!-- Theme Switcher Script -->
   <script>
     const themeSwitcher = document.getElementById('theme-switcher');
+    
+    // Check if user has a saved preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+      document.body.dataset.theme = 'dark';
+      themeSwitcher.innerHTML = '<i class="bx bx-sun"></i>';
+    }
+    
     themeSwitcher.addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme');
-      themeSwitcher.innerHTML = document.body.classList.contains('dark-theme')
+      const currentTheme = document.body.dataset.theme;
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.body.dataset.theme = newTheme;
+      localStorage.setItem('theme', newTheme);
+      
+      themeSwitcher.style.transform = 'rotate(180deg)';
+      themeSwitcher.innerHTML = newTheme === 'dark' 
         ? '<i class="bx bx-sun"></i>'
         : '<i class="bx bx-moon"></i>';
+      
+      setTimeout(() => {
+        themeSwitcher.style.transform = 'rotate(0deg)';
+      }, 300);
     });
   </script>
 </body>
