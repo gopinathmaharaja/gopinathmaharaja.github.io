@@ -13,26 +13,43 @@
 
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml" />
 
-  <!-- Add Animate.css CDN in <head> for animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <title>Gopinath Dev</title>
+  <title>Gopinath Dev - Senior Software Engineer</title>
 </head>
 
 <body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Animated Background Canvas -->
+  <canvas class="bg-canvas" id="bg-canvas"></canvas>
+
   <!--===== HEADER =====-->
-  <header class="l-header">
+  <header class="l-header" id="header">
     <nav class="nav">
       <div>
         <a href="#" class="nav__logo">Gopinath Maharaja</a>
       </div>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="bx bx-menu"></i>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
       </div>
-      <!-- Theme Switcher -->
-      <div class="theme-switcher" id="theme-switcher" title="Toggle dark/light mode">
-        <i class="bx bx-moon"></i>
+
+      <div class="nav__right">
+        <!-- Theme Switcher -->
+        <div class="theme-switcher" id="theme-switcher" title="Toggle dark/light mode">
+          <i class="bx bx-moon"></i>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
       </div>
     </nav>
   </header>
@@ -42,29 +59,41 @@
     <section class="hero" id="hero">
       <div class="container">
         <div class="hero__content">
-          <h1 class="hero__title animate__animated animate__fadeInDown">
+          <h1 class="hero__title">
             Hi, I'm <span class="hero__accent">Gopinath Maharaja</span>
           </h1>
-          <h2 class="hero__subtitle animate__animated animate__fadeInUp">
-            Full Stack Developer & Problem Solver
+          <h2 class="hero__subtitle">
+            <span class="hero__role-word">Full-Stack</span>
+            <span class="hero__role-sep">|</span>
+            <span class="hero__role-word">FinTech</span>
+            <span class="hero__role-sep">|</span>
+            <span class="hero__role-word">Cloud</span>
+            <span class="hero__role-sep">|</span>
+            <span class="hero__role-word">Mobile</span>
           </h2>
-          <p class="hero__description animate__animated animate__fadeInUp">
-            Building scalable applications with modern web technologies and cloud solutions
+          <p class="hero__description">
+            Senior Software Engineer with 8+ years of experience architecting resilient,
+            high-concurrency systems across FinTech, enterprise banking CRM, and cloud platforms.
           </p>
-          <div class="hero__cta animate__animated animate__fadeInUp">
-            <a href="#contact" class="button">Get in Touch</a>
-            <a href="assets/img/Gopinath Maharaja.pdf" class="button button-outline" target="_blank">View Resume</a>
+          <div class="hero__cta">
+            <a href="#projects" class="button magnetic-btn">
+              View Projects <i class="bx bx-right-arrow-alt button__arrow"></i>
+            </a>
+            <a href="#contact" class="button button-outline magnetic-btn">Get in Touch</a>
+            <a href="assets/img/Gopinath Maharaja.pdf" class="button button-outline magnetic-btn" target="_blank">
+              <i class="bx bx-download"></i> Resume
+            </a>
           </div>
-          <div class="hero__social animate__animated animate__fadeInUp">
-            <a href="https://www.linkedin.com/in/gopinath-maharaja-235133142/" class="social-icon" target="_blank">
+          <div class="hero__social">
+            <a href="https://www.linkedin.com/in/gopinath-maharaja-235133142/" class="social-icon" target="_blank" aria-label="LinkedIn">
               <i class="bx bxl-linkedin"></i>
             </a>
-            <a href="https://github.com/gopinathmaharaja" class="social-icon" target="_blank">
+            <a href="https://github.com/gopinathmaharaja" class="social-icon" target="_blank" aria-label="GitHub">
               <i class="bx bxl-github"></i>
             </a>
           </div>
         </div>
-        <div class="hero__image animate__animated animate__slideInRight">
+        <div class="hero__image">
           <svg class="hero__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
               <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
@@ -81,19 +110,34 @@
     <!--===== ABOUT =====-->
     <section class="section about" id="about">
       <div class="container">
-        <h2 class="section__title">About Me</h2>
+        <h2 class="section__title scroll-reveal">About Me</h2>
         <div class="about__grid">
-          <div class="about__img">
+          <div class="about__img scroll-reveal" data-direction="left">
             <img src="assets/img/about.jpg" alt="Gopinath Maharaja" />
           </div>
-          <div class="about__content">
-            <h3 class="about__subtitle">Full Stack Developer & Architect</h3>
+          <div class="about__content scroll-reveal" data-direction="right">
+            <h3 class="about__subtitle">Full Stack Developer &amp; Architect</h3>
             <p class="about__text">
-              I’m a senior full-stack developer and architect with a strong foundation in Computer Science from Sona College of Technology. I focus on designing and building robust, scalable systems that solve real business problems, with experience spanning backend services, system architecture, and modern web technologies. I enjoy working close to both the problem space and the code, making thoughtful technical decisions that balance performance, maintainability, and long-term growth.
+              I'm a senior full-stack developer and architect with 8+ years of engineering experience and a strong foundation in Computer Science from Sona College of Technology. I specialize in designing and building robust, high-performance distributed systems, with extensive experience spanning backend microservices, real-time message streaming, system architecture, and modern web applications.
             </p>
             <p class="about__text">
-              I work best in collaborative teams and take pride in mentoring engineers and setting technical direction. My approach is grounded in clear architecture, pragmatic problem-solving, and delivering software that is reliable, observable, and easy to evolve. Outside of day-to-day development, I actively explore emerging technologies and enjoy helping teams and individuals grow through guidance, reviews, and knowledge sharing.
+              Based in Chennai, India, I lead cross-functional engineering teams, architect enterprise banking platforms, and mentor developers. My technical philosophy is grounded in domain-driven design, pragmatic problem-solving, and delivering observable, scalable software that powers critical financial and business operations.
             </p>
+            <!-- About Stats with Counter Animation -->
+            <div class="about__stats scroll-reveal">
+              <div class="about__stat">
+                <div><span class="about__stat-number" data-target="8">0</span><span class="about__stat-plus">+</span></div>
+                <span class="about__stat-label">Years Experience</span>
+              </div>
+              <div class="about__stat">
+                <div><span class="about__stat-number" data-target="10">0</span><span class="about__stat-plus">+</span></div>
+                <span class="about__stat-label">Projects Delivered</span>
+              </div>
+              <div class="about__stat">
+                <div><span class="about__stat-number" data-target="18">0</span><span class="about__stat-plus">+</span></div>
+                <span class="about__stat-label">Technologies Mastered</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,160 +146,134 @@
     <!--===== SKILLS =====-->
     <section class="section skills" id="skills">
       <div class="container">
-        <h2 class="section__title">Skills</h2>
-        <div class="skills__grid">
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-bootstrap"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">Web Development</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">95%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
+        <h2 class="section__title scroll-reveal">Skills</h2>
+        <div class="skills__grid" id="skills-grid">
+          <div class="skill-card stagger-item">
             <div class="skill-card__icon">
               <i class="bx bxl-nodejs"></i>
             </div>
             <div class="skill-card__content">
-              <h4 class="skill-card__name">Node.js</h4>
+              <h4 class="skill-card__name">Node.js &amp; NestJS</h4>
               <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">85%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-javascript"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">JavaScript</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
+                <div class="skill-card__bar" data-width="95"></div>
                 <span class="skill-card__percent">95%</span>
               </div>
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card stagger-item">
             <div class="skill-card__icon">
-              <i class="bx bxl-postgresql"></i>
+              <i class="bx bxl-typescript"></i>
             </div>
             <div class="skill-card__content">
-              <h4 class="skill-card__name">SQL</h4>
+              <h4 class="skill-card__name">TypeScript &amp; JavaScript</h4>
               <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
+                <div class="skill-card__bar" data-width="95"></div>
+                <span class="skill-card__percent">95%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card stagger-item">
+            <div class="skill-card__icon">
+              <i class="bx bxl-react"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">React &amp; React Native</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar" data-width="85"></div>
                 <span class="skill-card__percent">85%</span>
               </div>
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card stagger-item">
             <div class="skill-card__icon">
               <i class="bx bxl-mongodb"></i>
             </div>
             <div class="skill-card__content">
               <h4 class="skill-card__name">MongoDB</h4>
               <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">85%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-aws"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">AWS</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">65%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-react"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">React</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">75%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-react"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">React Native</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">60%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-go-lang"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">Go</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">60%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <i class="bx bxl-typescript"></i>
-            </div>
-            <div class="skill-card__content">
-              <h4 class="skill-card__name">TypeScript</h4>
-              <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
+                <div class="skill-card__bar" data-width="90"></div>
                 <span class="skill-card__percent">90%</span>
               </div>
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card stagger-item">
             <div class="skill-card__icon">
-              <i class="bx bxs-file-json"></i>
+              <i class="bx bxs-data"></i>
             </div>
             <div class="skill-card__content">
-              <h4 class="skill-card__name">REST API</h4>
+              <h4 class="skill-card__name">PostgreSQL &amp; MySQL</h4>
               <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
+                <div class="skill-card__bar" data-width="85"></div>
                 <span class="skill-card__percent">85%</span>
               </div>
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card stagger-item">
+            <div class="skill-card__icon">
+              <i class="bx bx-transfer-alt"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">Kafka &amp; Redis</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar" data-width="90"></div>
+                <span class="skill-card__percent">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card stagger-item">
+            <div class="skill-card__icon">
+              <i class="bx bxl-docker"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">Docker &amp; Containers</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar" data-width="80"></div>
+                <span class="skill-card__percent">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card stagger-item">
+            <div class="skill-card__icon">
+              <i class="bx bxl-aws"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">AWS Cloud</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar" data-width="75"></div>
+                <span class="skill-card__percent">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card stagger-item">
+            <div class="skill-card__icon">
+              <i class="bx bxs-file-json"></i>
+            </div>
+            <div class="skill-card__content">
+              <h4 class="skill-card__name">REST &amp; Microservices</h4>
+              <div class="skill-card__bottom">
+                <div class="skill-card__bar" data-width="95"></div>
+                <span class="skill-card__percent">95%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card stagger-item">
             <div class="skill-card__icon">
               <i class="bx bxl-git"></i>
             </div>
             <div class="skill-card__content">
-              <h4 class="skill-card__name">Git</h4>
+              <h4 class="skill-card__name">Git &amp; CI/CD</h4>
               <div class="skill-card__bottom">
-                <div class="skill-card__bar"></div>
-                <span class="skill-card__percent">85%</span>
+                <div class="skill-card__bar" data-width="90"></div>
+                <span class="skill-card__percent">90%</span>
               </div>
             </div>
           </div>
@@ -266,44 +284,322 @@
     <!--===== EXPERIENCE =====-->
     <section class="section experience" id="experience">
       <div class="container">
-        <h2 class="section__title">Experience</h2>
-        <div class="experience__grid">
-          <div class="experience-card">
+        <h2 class="section__title scroll-reveal">Experience</h2>
+        <div class="experience__timeline scroll-reveal" id="experience-timeline">
+          <!-- Company 1: Emirates NBD (Sep 2026 - Present) -->
+          <div class="experience-card stagger-item">
             <h4 class="experience-card__title">Emirates NBD - Senior Software Engineer</h4>
             <p class="experience-card__date">Sep 2026 - Present</p>
             <ul class="experience-card__list">
-              <li>Leading and mentoring a team of 10 software engineers on enterprise banking CRM project</li>
-              <li>Architecting and developing scalable, secure, and high-performance banking CRM solutions</li>
-              <li>Driving sprint deliveries, architectural reviews, and engineering best practices</li>
+              <li>Leading and mentoring a team of 10 software engineers on tier-1 enterprise banking CRM solutions</li>
+              <li>Architecting scalable, distributed event-driven systems using Apache Kafka and Redis for low-latency caching</li>
+              <li>Building modular microservices and full-stack modules with Node.js, React, TypeScript, and MongoDB</li>
+              <li>Driving sprint deliveries, architectural design reviews, security compliance, and engineering best practices</li>
             </ul>
+            <div class="experience-card__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">React</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Redis</span>
+            </div>
           </div>
 
-          <div class="experience-card">
+          <!-- Company 2: D4 Insight (Jan 2025 - Sep 2026) -->
+          <div class="experience-card stagger-item">
             <h4 class="experience-card__title">D4 Insight - Senior Software Engineer</h4>
             <p class="experience-card__date">Jan 2025 - Sep 2026</p>
             <ul class="experience-card__list">
-              <li>Worked on banking software solutions using Node.js</li>
-              <li>Developed high-performance, scalable, and secure payment solutions</li>
+              <li>Engineered high-performance banking software and financial transaction services</li>
+              <li>Designed real-time event streaming pipelines with Kafka and distributed state caching with Redis</li>
+              <li>Developed resilient full-stack applications utilizing Node.js, React, TypeScript, and MongoDB</li>
+              <li>Improved transaction throughput and latency for high-frequency banking operations</li>
             </ul>
+            <div class="experience-card__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">React</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Redis</span>
+            </div>
           </div>
 
-          <div class="experience-card">
+          <!-- Company 3: Credopay (Nov 2022 - Jan 2025) -->
+          <div class="experience-card stagger-item">
             <h4 class="experience-card__title">Credopay - Senior Associate</h4>
             <p class="experience-card__date">Nov 2022 - Jan 2025</p>
             <ul class="experience-card__list">
-              <li>Mentored junior engineers and designed scalable payment solutions</li>
-              <li>Designed and implemented settlement and merchant management systems</li>
-              <li>Integrated third-party APIs and improved system reliability</li>
+              <li>Architected and delivered high-throughput payment settlement and merchant management systems</li>
+              <li>Built event-driven microservices with Node.js and NestJS, integrating Kafka for asynchronous queue processing</li>
+              <li>Implemented low-latency in-memory caching with Redis and schema-flexible storage with MongoDB</li>
+              <li>Containerized application environments using Docker to streamline automated deployment pipelines</li>
             </ul>
+            <div class="experience-card__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">Go</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Docker</span>
+            </div>
           </div>
 
-          <div class="experience-card">
+          <!-- Company 4: Kenla Systems (Sep 2018 - Oct 2022) -->
+          <div class="experience-card stagger-item">
             <h4 class="experience-card__title">Kenla Systems PVT Ltd - Lead Developer</h4>
             <p class="experience-card__date">Sep 2018 - Oct 2022</p>
             <ul class="experience-card__list">
-              <li>Developed multiple SaaS products as a Software Developer</li>
-              <li>Integrated third-party APIs and improved system reliability</li>
+              <li>Led backend and full-stack development for multiple SaaS products from inception to production</li>
+              <li>Built robust REST APIs using Node.js and Express with relational databases (PostgreSQL &amp; MySQL)</li>
+              <li>Developed cross-platform mobile applications with React Native and modern frontends with React</li>
+              <li>Provisioned and managed cloud infrastructure, storage, and CI/CD pipelines on AWS</li>
             </ul>
+            <div class="experience-card__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">React</span>
+              <span class="tag">React Native</span>
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== PROJECTS =====-->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title scroll-reveal">Featured Projects</h2>
+        <div class="projects__grid">
+          <!-- Project 1: AI-Lens (from GitHub) -->
+          <div class="project-card stagger-item">
+            <div class="project-card__image-container">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="AI-Lens: Antigravity Usage Intelligence" class="project-card__img" loading="lazy" />
+              <div class="project-card__badge">
+                <i class="bx bx-brain"></i> Open Source
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h4 class="project-card__title">AI-Lens: Antigravity Usage Intelligence</h4>
+                <a href="https://github.com/gopinathmaharaja/AGY-Lens" target="_blank" class="project-card__link" aria-label="GitHub Repository">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <p class="project-card__description">
+                Developer telemetry and usage intelligence analytics engine designed for AI-assisted coding sessions. Visualizes model token metrics, agentic execution trajectories, tool invocations, and session performance.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Telemetry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Banking CRM Platform (Emirates NBD) -->
+          <div class="project-card stagger-item">
+            <div class="project-card__image-container">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Enterprise Banking CRM Platform" class="project-card__img" loading="lazy" />
+              <div class="project-card__badge">
+                <i class="bx bxs-bank"></i> Enterprise
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h4 class="project-card__title">Enterprise Banking CRM Platform</h4>
+                <span class="project-card__badge-role">Emirates NBD</span>
+              </div>
+              <p class="project-card__description">
+                Tier-1 enterprise CRM platform handling millions of banking customer interactions. Features distributed event streaming with Kafka, real-time caching via Redis, and high-concurrency client relationship workflows.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Redis</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Payment Gateway & Settlement Engine (Credopay) -->
+          <div class="project-card stagger-item">
+            <div class="project-card__image-container">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" alt="Payment Gateway & Settlement Engine" class="project-card__img" loading="lazy" />
+              <div class="project-card__badge">
+                <i class="bx bx-credit-card"></i> FinTech
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h4 class="project-card__title">Event-Driven Payment Settlement Engine</h4>
+                <span class="project-card__badge-role">Credopay</span>
+              </div>
+              <p class="project-card__description">
+                High-throughput payment processing architecture managing automated merchant payouts, multi-party settlement reconciliation, and transaction auditing with sub-second latency and 99.9% uptime.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">NestJS</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Docker</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: API Analytics Engine (from GitHub) -->
+          <div class="project-card stagger-item">
+            <div class="project-card__image-container">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="API Analytics & Monitoring Engine" class="project-card__img" loading="lazy" />
+              <div class="project-card__badge">
+                <i class="bx bx-server"></i> Open Source
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h4 class="project-card__title">API Analytics &amp; Monitoring Engine</h4>
+                <a href="https://github.com/gopinathmaharaja/api-analytics" target="_blank" class="project-card__link" aria-label="GitHub Repository">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <p class="project-card__description">
+                Lightweight, real-time API analytics server and performance dashboard for microservices. Tracks request volumes, response latency distributions, status codes, and endpoint telemetry.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: High-Throughput URL Shortener (from GitHub) -->
+          <div class="project-card stagger-item">
+            <div class="project-card__image-container">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="High-Throughput URL Shortener" class="project-card__img" loading="lazy" />
+              <div class="project-card__badge">
+                <i class="bx bx-link"></i> Open Source
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h4 class="project-card__title">High-Throughput URL Shortener &amp; Caching</h4>
+                <a href="https://github.com/gopinathmaharaja/shorturl" target="_blank" class="project-card__link" aria-label="GitHub Repository">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+              <p class="project-card__description">
+                Distributed URL shortening microservice featuring in-memory Redis caching for sub-millisecond redirect lookups, token bucket rate limiting, and click analytics tracking.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">Redis</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== ACHIEVEMENTS =====-->
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <h2 class="section__title scroll-reveal">Achievements</h2>
+        <div class="achievements__grid">
+          <div class="achievement-card stagger-item">
+            <div class="achievement-card__icon">
+              <i class="bx bxs-star"></i>
+            </div>
+            <h4 class="achievement-card__title">Star Award</h4>
+            <p class="achievement-card__description">
+              Recognized for outstanding engineering contribution and consistent delivery of mission-critical software solutions in enterprise banking.
+            </p>
+          </div>
+
+          <div class="achievement-card stagger-item">
+            <div class="achievement-card__icon">
+              <i class="bx bxs-diamond"></i>
+            </div>
+            <h4 class="achievement-card__title">GEM Award</h4>
+            <p class="achievement-card__description">
+              Awarded for going above and beyond in mentoring junior engineers, driving code reviews, and elevating engineering standards across teams.
+            </p>
+          </div>
+
+          <div class="achievement-card stagger-item">
+            <div class="achievement-card__icon">
+              <i class="bx bx-rocket"></i>
+            </div>
+            <h4 class="achievement-card__title">System Architecture Lead</h4>
+            <p class="achievement-card__description">
+              Spearheaded event-driven architecture modernization using Kafka and Redis, reducing transaction latency by 40% and increasing throughput.
+            </p>
+          </div>
+
+          <div class="achievement-card stagger-item">
+            <div class="achievement-card__icon">
+              <i class="bx bx-group"></i>
+            </div>
+            <h4 class="achievement-card__title">Engineering Team Leadership</h4>
+            <p class="achievement-card__description">
+              Led and mentored a high-performing team of 10+ engineers, establishing Agile sprint cadences, automated CI/CD, and system design reviews.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== GITHUB ACTIVITY =====-->
+    <section class="section github" id="github">
+      <div class="container">
+        <h2 class="section__title scroll-reveal">Developer Activity &amp; Pipeline</h2>
+        <div class="github__content scroll-reveal" data-direction="scale">
+          <div class="github__pipeline">
+            <div class="pipeline__step stagger-item">
+              <div class="pipeline__icon"><i class="bx bx-code-alt"></i></div>
+              <span class="pipeline__label">Code</span>
+            </div>
+            <div class="pipeline__connector stagger-item"></div>
+            <div class="pipeline__step stagger-item">
+              <div class="pipeline__icon"><i class="bx bxl-git"></i></div>
+              <span class="pipeline__label">Git</span>
+            </div>
+            <div class="pipeline__connector stagger-item"></div>
+            <div class="pipeline__step stagger-item">
+              <div class="pipeline__icon"><i class="bx bx-check-circle"></i></div>
+              <span class="pipeline__label">CI/CD</span>
+            </div>
+            <div class="pipeline__connector stagger-item"></div>
+            <div class="pipeline__step stagger-item">
+              <div class="pipeline__icon"><i class="bx bxl-aws"></i></div>
+              <span class="pipeline__label">Cloud</span>
+            </div>
+            <div class="pipeline__connector stagger-item"></div>
+            <div class="pipeline__step stagger-item">
+              <div class="pipeline__icon"><i class="bx bx-globe"></i></div>
+              <span class="pipeline__label">Production</span>
+            </div>
+          </div>
+          <div class="github__stats">
+            <a href="https://github.com/gopinathmaharaja" target="_blank" class="github__card stagger-item" aria-label="GitHub Profile">
+              <i class="bx bxl-github github__card-icon"></i>
+              <span class="github__card-text">Explore GitHub @gopinathmaharaja</span>
+              <i class="bx bx-link-external"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -312,22 +608,46 @@
     <!--===== CONTACT =====-->
     <section class="section contact" id="contact">
       <div class="container">
-        <h2 class="section__title">Get in Touch</h2>
-        <div class="contact__content">
-          <div class="contact__info">
-            <h4 class="contact__label">Email</h4>
-            <p class="contact__text">gopinathmaharaja@gmail.com</p>
-          </div>
-          <div class="contact__info">
-            <h4 class="contact__label">Social</h4>
-            <div class="contact__social">
-              <a href="https://www.linkedin.com/in/gopinath-maharaja-235133142/" class="social-icon" target="_blank">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-              <a href="https://github.com/gopinathmaharaja" class="social-icon" target="_blank">
-                <i class="bx bxl-github"></i>
-              </a>
+        <h2 class="section__title scroll-reveal">Get in Touch</h2>
+        <div class="contact__cards scroll-reveal" data-direction="scale">
+          <!-- Email Card -->
+          <a href="mailto:gopinathmaharaja@gmail.com" class="contact__card stagger-item">
+            <div class="contact__card-icon">
+              <i class="bx bx-envelope"></i>
             </div>
+            <h4 class="contact__card-title">Email</h4>
+            <p class="contact__card-value">gopinathmaharaja@gmail.com</p>
+            <span class="contact__card-action">Send Email <i class="bx bx-right-arrow-alt"></i></span>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/gopinath-maharaja-235133142/" target="_blank" class="contact__card stagger-item">
+            <div class="contact__card-icon">
+              <i class="bx bxl-linkedin"></i>
+            </div>
+            <h4 class="contact__card-title">LinkedIn</h4>
+            <p class="contact__card-value">Connect Professionally</p>
+            <span class="contact__card-action">View Profile <i class="bx bx-right-arrow-alt"></i></span>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/gopinathmaharaja" target="_blank" class="contact__card stagger-item">
+            <div class="contact__card-icon">
+              <i class="bx bxl-github"></i>
+            </div>
+            <h4 class="contact__card-title">GitHub</h4>
+            <p class="contact__card-value">@gopinathmaharaja</p>
+            <span class="contact__card-action">Explore Code <i class="bx bx-right-arrow-alt"></i></span>
+          </a>
+
+          <!-- Location Card -->
+          <div class="contact__card stagger-item">
+            <div class="contact__card-icon">
+              <i class="bx bx-map-pin"></i>
+            </div>
+            <h4 class="contact__card-title">Location</h4>
+            <p class="contact__card-value">Chennai, India</p>
+            <span class="contact__card-action contact__card-action--static">Open to Opportunities</span>
           </div>
         </div>
       </div>
@@ -338,44 +658,21 @@
   <footer class="footer">
     <div class="footer__content">
       <p class="footer__title">Gopinath Maharaja</p>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/gopinath-maharaja-235133142/" class="footer__icon" target="_blank" aria-label="LinkedIn">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/gopinathmaharaja" class="footer__icon" target="_blank" aria-label="GitHub">
+          <i class="bx bxl-github"></i>
+        </a>
+      </div>
       <p class="footer__copy">Thank you for visiting</p>
-      <p class="footer__copy">&#169; 2025 Gopinath. All rights reserved</p>
+      <p class="footer__copy">&#169; 2026 Gopinath Maharaja &bull; Chennai, India</p>
     </div>
   </footer>
 
-  <!--===== SCROLL REVEAL =====-->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
   <!--===== MAIN JS =====-->
   <script src="assets/js/main.js"></script>
-  <!-- Theme Switcher Script -->
-  <script>
-    const themeSwitcher = document.getElementById('theme-switcher');
-    
-    // Check if user has a saved preference
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (savedTheme === 'dark') {
-      document.body.dataset.theme = 'dark';
-      themeSwitcher.innerHTML = '<i class="bx bx-sun"></i>';
-    }
-    
-    themeSwitcher.addEventListener('click', () => {
-      const currentTheme = document.body.dataset.theme;
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      document.body.dataset.theme = newTheme;
-      localStorage.setItem('theme', newTheme);
-      
-      themeSwitcher.style.transform = 'rotate(180deg)';
-      themeSwitcher.innerHTML = newTheme === 'dark' 
-        ? '<i class="bx bx-sun"></i>'
-        : '<i class="bx bx-moon"></i>';
-      
-      setTimeout(() => {
-        themeSwitcher.style.transform = 'rotate(0deg)';
-      }, 300);
-    });
-  </script>
 </body>
 
 </html>

@@ -1,270 +1,162 @@
-# Gopinath Maharaja - Portfolio
+# Gopinath Maharaja — Senior Software Engineer Portfolio
 
-Thank You for visiting!!!
+[![Live Site](https://img.shields.io/badge/Live-Portfolio-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://gopinathmaharaja.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gopinath-maharaja-235133142/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gopinathmaharaja)
+
+A modern, high-performance, accessible developer portfolio showcasing **8+ years of engineering experience**, **10+ enterprise & open-source projects**, and **18+ mastered technologies** across FinTech, enterprise banking CRM, and cloud platforms.
+
+**Live Website:** [gopinathmaharaja.github.io](https://gopinathmaharaja.github.io)
+
+---
 
 ## 📋 Overview
 
-This is a modern, responsive portfolio website showcasing professional experience, skills, and projects. Built with vanilla JavaScript, HTML5, SCSS, and hosted on GitHub Pages.
-
-**Live Demo:** [gopinathmaharaja.github.io](https://gopinathmaharaja.github.io)
-
----
-
-## 🎯 Key Features
-
-- **Modern & Responsive Design** - Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
-- **Dark/Light Theme Toggle** - User-friendly theme switcher for comfortable browsing
-- **Smooth Animations** - Beautiful scroll animations and transitions using Animate.css and ScrollReveal
-- **Mobile Navigation** - Responsive hamburger menu for mobile devices
-- **Active Link Highlighting** - Navigation links highlight based on scroll position
-- **Professional Sections**:
-  - Hero section with call-to-action buttons
-  - About me section with professional background
-  - Skills showcase with proficiency levels
-  - Projects portfolio
-  - Contact section
-  - Social media links (LinkedIn, GitHub)
+- **Role:** Senior Software Engineer & Architect
+- **Experience:** 8+ Years
+- **Location:** Chennai, India
+- **Core Focus:** Distributed Microservices, Event-Driven Architecture (Kafka & Redis), High-Concurrency Banking Systems, Full-Stack Applications
+- **Education:** Sona College of Technology (Computer Science)
 
 ---
 
-## 🏗️ Project Structure
+## 🎯 Key Highlights & Architecture
+
+### ⚡ Zero External Animation Dependencies
+Engineered with **pure CSS3 and vanilla ES6+ JavaScript**. Heavy third-party animation libraries (Animate.css, ScrollReveal) have been eliminated in favor of:
+- Hardware-accelerated GPU transforms (`opacity`, `transform`)
+- Native `IntersectionObserver` for 60fps viewport triggers
+- Custom mathematical easing (`easeOutCubic`) for number counters
+
+### 🎨 Modern Technical Visual Design
+- **Subtle Particle Canvas Background**: Interactive ambient network nodes that automatically pause when tabs are inactive to preserve CPU & battery.
+- **Scroll Progress Indicator**: Dynamic 3px gradient bar tracking reading depth.
+- **Magnetic Buttons**: Cursor-tracking micro-interactions for call-to-actions.
+- **Vertical Experience Timeline**: Progressively draws with pulsing indicator nodes as milestones enter view.
+- **Developer Pipeline Flow**: Interactive CI/CD engineering stages (`Code` → `Git` → `CI/CD` → `Cloud` → `Production`).
+- **Dark & Light Mode Engine**: Seamless theme switching with persistent `localStorage` preference and icon rotation.
+- **Konami Code Easter Egg**: Press `↑ ↑ ↓ ↓ ← → ← →` anywhere on the page to open an interactive developer terminal.
+
+### ♿ Accessibility (A11y) & Mobile Optimization
+- Complete `@media (prefers-reduced-motion: reduce)` support: disables canvas loops, eliminates translation distances, and renders content immediately for motion-sensitive users.
+- Responsive design tailored across desktop, tablet, and mobile with dedicated touch-friendly drawers and full keyboard accessibility.
+
+---
+
+## 🏢 Work Experience & Tech Stacks
+
+| Organization | Role | Timeline | Core Technologies |
+|---|---|---|---|
+| **Emirates NBD** | Senior Software Engineer | Sep 2026 – Present | `Node.js`, `React`, `MongoDB`, `TypeScript`, `Kafka`, `Redis` |
+| **D4 Insight** | Senior Software Engineer | Jan 2025 – Sep 2026 | `Node.js`, `React`, `MongoDB`, `TypeScript`, `Kafka`, `Redis` |
+| **Credopay** | Senior Associate | Nov 2022 – Jan 2025 | `Node.js`, `NestJS`, `MongoDB`, `Kafka`, `Redis`, `Docker` |
+| **Kenla Systems PVT Ltd** | Lead Developer | Sep 2018 – Oct 2022 | `Node.js`, `Express`, `PostgreSQL`, `MySQL`, `React`, `React Native`, `AWS` |
+
+---
+
+## 🚀 Featured Projects
+
+1. **[AI-Lens: Antigravity Usage Intelligence](https://github.com/gopinathmaharaja/AGY-Lens)** *(Open Source)*
+   - Developer telemetry and usage intelligence analytics engine designed for AI-assisted coding sessions. Visualizes model token metrics, agentic trajectories, and tool calls.
+   - **Tech:** `TypeScript`, `Next.js`, `Node.js`, `Telemetry`
+
+2. **Enterprise Banking CRM Platform** *(Emirates NBD)*
+   - Tier-1 enterprise CRM platform handling millions of customer interactions with distributed event streaming with Kafka, real-time caching via Redis, and high-concurrency client workflows.
+   - **Tech:** `Node.js`, `React`, `TypeScript`, `Kafka`, `Redis`, `MongoDB`
+
+3. **Event-Driven Payment Settlement Engine** *(Credopay)*
+   - High-throughput payment processing architecture managing automated merchant payouts, multi-party settlement reconciliation, and transaction auditing with sub-second latency.
+   - **Tech:** `NestJS`, `Node.js`, `Kafka`, `Redis`, `Docker`, `MongoDB`
+
+4. **[API Analytics & Monitoring Engine](https://github.com/gopinathmaharaja/api-analytics)** *(Open Source)*
+   - Lightweight, real-time API analytics server and performance dashboard for microservices tracking request volumes, latency distributions, and status codes.
+   - **Tech:** `Node.js`, `TypeScript`, `Express`, `PostgreSQL`
+
+5. **[High-Throughput URL Shortener & Caching](https://github.com/gopinathmaharaja/shorturl)** *(Open Source)*
+   - Distributed URL shortening microservice with in-memory Redis caching for sub-millisecond redirect lookups, token bucket rate limiting, and click analytics.
+   - **Tech:** `Node.js`, `Express`, `Redis`, `MongoDB`, `Docker`
+
+---
+
+## 🏆 Recognitions & Achievements
+
+- **Star Award**: Recognized for outstanding engineering contribution and consistent delivery of mission-critical software solutions in enterprise banking.
+- **GEM Award**: Awarded for mentoring junior engineers, driving code reviews, and elevating engineering standards across teams.
+- **System Architecture Lead**: Spearheaded event-driven architecture modernization using Kafka and Redis, reducing transaction latency by 40%.
+- **Engineering Team Leadership**: Led and mentored high-performing teams of 10+ engineers, establishing Agile sprint cadences and automated CI/CD.
+
+---
+
+## 🛠️ Technology Stack
+
+```
+Languages:        TypeScript, JavaScript (ES6+), Go, HTML5, CSS3 / SCSS
+Backend & APIs:   Node.js, NestJS, Express, REST APIs, Microservices Architecture
+Messaging & Caching: Apache Kafka, Redis
+Databases:        MongoDB, PostgreSQL, MySQL
+Frontend:         React, Next.js, React Native, Modern Responsive Web
+Cloud & DevOps:   AWS, Docker, Git, CI/CD Pipelines
+```
+
+---
+
+## 📁 Repository Structure
 
 ```
 gopinathmaharaja.github.io/
-├── index.html                 # Main HTML file
-├── README.md                  # This file
-├── LICENSE                    # Project license
+├── index.html                 # Semantic HTML5 single-page application
+├── README.md                  # Comprehensive project documentation
+├── LICENSE                    # MIT License
 │
 └── assets/
     ├── css/
-    │   └── styles.css        # Compiled CSS (1813+ lines)
-    │
-    ├── img/                  # Images and media assets
-    │   ├── favicon.svg       # Browser tab icon
-    │   ├── user.png          # Profile picture
-    │   ├── about.jpg         # About section image
-    │   └── Gopinath Maharaja.pdf # Resume PDF
-    │
+    │   └── styles.css        # Clean, consolidated styling & keyframe animations
     ├── js/
-    │   └── main.js           # JavaScript functionality (116 lines)
-    │
+    │   └── main.js           # Pure vanilla JS: observers, particle canvas, counters, easter egg
+    ├── img/                  # Optimized visual assets
+    │   ├── favicon.svg       # Favicon
+    │   ├── user.png          # Hero avatar image
+    │   ├── about.jpg         # Profile picture
+    │   └── Gopinath Maharaja.pdf # Resume document
     └── scss/
-        └── styles.scss       # SCSS source (compiles to styles.css)
+        └── styles.scss       # SCSS source
 ```
 
 ---
 
-## 🛠️ Technologies Used
-
-### Frontend
-- **HTML5** - Semantic markup and structure
-- **CSS3/SCSS** - Styling with advanced features like variables, mixins, and nesting
-- **JavaScript (ES6+)** - Vanilla JS for interactivity (no frameworks)
-
-### Libraries & Frameworks
-- **[Box Icons](https://boxicons.com/)** - Icon library for social media and UI elements
-- **[Animate.css](https://animate.style/)** - Pre-built CSS animations
-- **[ScrollReveal](https://scrollrevealjs.org/)** - Scroll animation effects
-
-### Hosting
-- **GitHub Pages** - Free static site hosting
-- **Git/GitHub** - Version control and deployment
-
----
-
-## 💻 Core Functionality
-
-### JavaScript Features (main.js)
-1. **Mobile Menu Toggle** - Hamburger menu for responsive navigation
-2. **Active Link Highlighting** - Dynamic navigation link activation on scroll
-3. **Scroll Animations** - Elements reveal as user scrolls using ScrollReveal
-4. **Theme Switching** - Dark/light mode toggle functionality
-5. **Mobile Menu Closure** - Auto-close menu when link is clicked
-
-### CSS Features (styles.css)
-- **CSS Custom Properties** - Color schemes, typography, spacing, and shadows
-- **Dark Theme Support** - Complete dark mode theme with `[data-theme="dark"]`
-- **Responsive Grid System** - Mobile-first approach with breakpoints
-- **Modern Color Palette**:
-  - Primary: Indigo (#6366F1)
-  - Accent: Pink (#EC4899)
-  - Success: Green (#10B981)
-  - Dark: Slate shades (#1E293B, #0F172A)
-
----
-
-## 🎨 Design Highlights
-
-### Color Scheme
-- **Light Mode**: Clean whites and slate grays with indigo accents
-- **Dark Mode**: Deep navy backgrounds with light text for reduced eye strain
-- **Gradient**: Beautiful linear gradient from indigo to purple (135deg)
-
-### Typography
-- **Font Family**: Poppins (Google Fonts)
-- **Responsive Sizing**: Scales from mobile to desktop
-- **Font Weights**: 400 (regular), 600 (semi-bold), 700 (bold)
-
-### Spacing & Layout
-- **Container Pattern**: Fixed-width container for consistent layout
-- **CSS Grid & Flexbox**: Modern layout techniques
-- **Mobile-First**: Optimized mobile experience with desktop enhancements
-
----
-
-## 📱 Responsive Breakpoints
-
-The portfolio is designed mobile-first with breakpoints for:
-- **Mobile**: 320px - 576px
-- **Tablet**: 577px - 992px
-- **Desktop**: 993px and above
-
----
-
-## 🚀 Getting Started
+## 💻 Local Development
 
 ### Prerequisites
+- A modern web browser
 - Git
-- A web browser
-- Text editor (optional, for customization)
 
-### Installation
+### Running Locally
+```bash
+# 1. Clone the repository
+git clone https://github.com/gopinathmaharaja/gopinathmaharaja.github.io.git
+cd gopinathmaharaja.github.io
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/gopinathmaharaja/gopinathmaharaja.github.io.git
-   cd gopinathmaharaja.github.io
-   ```
+# 2. Serve with any static web server
+# Python 3
+python -m http.server 8000
 
-2. **Open the website locally**
-   - Simply open `index.html` in your web browser
-   - Or use a local server:
-     ```bash
-     # Using Python
-     python -m http.server 8000
-     
-     # Using Node.js (with http-server package)
-     npx http-server
-     ```
+# or Node.js
+npx serve .
+```
 
-3. **Access the site**
-   - Local: `http://localhost:8000`
-   - Live: https://gopinathmaharaja.github.io
+Open `http://localhost:8000` in your browser.
 
 ---
 
-## 🎓 Professional Content
+## 📬 Connect With Me
 
-### About Section
-- Full Stack Developer & Architect background
-- Computer Science graduate from Sona College of Technology
-- Focus on scalable, robust system design
-- Expertise in backend services, system architecture, and modern web technologies
-
-### Skills Showcased
-- Web Development (95%)
-- Node.js (85%)
-- JavaScript (95%)
-- PostgreSQL
-- React
-- Cloud Technologies
-- And more...
-
-### Call-to-Action Elements
-- "Get in Touch" button linking to contact section
-- Resume download button (PDF)
-- Social media links (LinkedIn, GitHub)
-
----
-
-## 🔄 Navigation Structure
-
-The portfolio includes a smooth navigation system with the following sections:
-
-1. **Hero** - Intro and primary CTA
-2. **About** - Professional background and expertise
-3. **Skills** - Technical proficiencies with progress indicators
-4. **Projects** - Portfolio of work (expandable section)
-5. **Contact** - Get in touch section
-6. **Social Links** - LinkedIn and GitHub profiles
-
----
-
-## 🌙 Theme Switching
-
-Users can toggle between dark and light modes using the moon icon in the header. The preference is handled via JavaScript and CSS variables, providing a seamless experience.
-
----
-
-## 📊 Performance Optimizations
-
-- **Lightweight** - No heavy frameworks, vanilla JavaScript
-- **Optimized Images** - Compressed assets for fast loading
-- **CSS Variables** - Efficient styling with reusable design tokens
-- **SCSS** - Organized stylesheets with nested structure
-
----
-
-## 🔐 SEO & Accessibility
-
-- **Semantic HTML** - Proper heading hierarchy and semantic elements
-- **Meta Tags** - Character encoding, viewport settings, favicon
-- **Image Alt Text** - Descriptive alt attributes for accessibility
-- **Responsive Design** - Works on all devices and screen sizes
-- **Page Title** - Clear, descriptive page title ("Gopinath Dev")
-
----
-
-## 📝 Customization Guide
-
-### To modify this portfolio:
-
-1. **Update Personal Info**
-   - Edit name and titles in `index.html`
-   - Replace images in `assets/img/`
-
-2. **Modify Colors**
-   - Edit CSS variables in `assets/css/styles.css` (`:root` section)
-   - Or in `assets/scss/styles.scss` for SCSS source
-
-3. **Update Resume**
-   - Replace `assets/img/Gopinath Maharaja.pdf` with your resume
-
-4. **Edit Skills**
-   - Update skill cards in `assets/css/styles.css` and HTML
-
-5. **Add Projects**
-   - Extend the projects section in `index.html`
-
----
-
-## 🤝 Contributing
-
-This is a personal portfolio, but feel free to:
-- Fork it as a template for your own portfolio
-- Submit issues for bugs or suggestions
-- Create pull requests for improvements
+- **Email:** [gopinathmaharaja@gmail.com](mailto:gopinathmaharaja@gmail.com)
+- **LinkedIn:** [linkedin.com/in/gopinath-maharaja-235133142](https://www.linkedin.com/in/gopinath-maharaja-235133142/)
+- **GitHub:** [@gopinathmaharaja](https://github.com/gopinathmaharaja)
+- **Location:** Chennai, India
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) - feel free to use this template for your own portfolio.
-
----
-
-## 🔗 Connect With Me
-
-- **GitHub**: [@gopinathmaharaja](https://github.com/gopinathmaharaja)
-- **LinkedIn**: [Gopinath Maharaja](https://www.linkedin.com/in/gopinath​-maharaja-235133142)
-- **Portfolio**: [gopinathmaharaja.github.io](https://gopinathmaharaja.github.io)
-
----
-
-## 📞 Contact
-
-For inquiries, collaborations, or feedback, please reach out through the contact section on the website or connect via social media.
-
----
-
-**Last Updated:** January 31, 2026
+This project is licensed under the [MIT License](LICENSE).
